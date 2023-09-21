@@ -1,4 +1,5 @@
-package software.ulpgc.es;
+package software.uplgc.es;
+
 import java.time.LocalDate;
 
 public class Person {
@@ -22,7 +23,7 @@ public class Person {
         return toYears(LocalDate.now().toEpochDay()- birthday.toEpochDay());
     }
 
-    private int toYears(long l) {
-        return (int)
+    private int toYears(long days) {
+        return (int) (days/365.25);
     }
 }
