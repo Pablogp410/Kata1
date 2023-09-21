@@ -1,3 +1,4 @@
+package software.ulpgc.es;
 import java.time.LocalDate;
 
 public class Person {
@@ -17,4 +18,11 @@ public class Person {
         return birthday;
     }
 
+    public int getAge(){
+        return toYears(LocalDate.now().toEpochDay()- birthday.toEpochDay());
+    }
+
+    private int toYears(long l) {
+        return (int)
+    }
 }
